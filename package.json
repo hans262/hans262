@@ -7,9 +7,13 @@
     "cf-typegen": "wrangler types",
     "check": "tsc && vite build && wrangler deploy --dry-run",
     "deploy": "wrangler deploy",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "db:generate": "drizzle-kit generate",
+    "db:migrate:local": "wrangler d1 migrations apply mydb --local",
+    "db:migrate:remote": "wrangler d1 migrations apply mydb"
   },
   "dependencies": {
+    "drizzle-orm": "^0.36.0",
     "hono": "4.8.2",
     "react": "19.0.0",
     "react-dom": "19.0.0"
@@ -20,6 +24,7 @@
     "@types/react": "19.0.10",
     "@types/react-dom": "19.0.4",
     "@vitejs/plugin-react": "5.1.0",
+    "drizzle-kit": "^0.31.6",
     "typescript": "5.9.3",
     "vite": "^7.1.12",
     "wrangler": "4.45.1"

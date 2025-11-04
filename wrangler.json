@@ -11,5 +11,14 @@
   "assets": {
     "directory": "./dist/client",
     "not_found_handling": "single-page-application"
-  }
+  },
+  "d1_databases": [
+    {
+      "binding": "mydb",
+      "database_name": "mydb",
+      "database_id": "cb176f7f-c5ee-45dd-85ac-8233471ee963",
+      "remote": false,
+      "migrations_dir": "drizzle"
+    }
+  ]
 }
